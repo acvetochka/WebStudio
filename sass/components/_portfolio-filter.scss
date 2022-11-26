@@ -1,0 +1,47 @@
+// .projects-section {
+//   @extend %section;
+// }
+
+// .filter {
+//   @extend %container;
+//   margin-bottom: 50px;
+
+//   &__list {
+//     display: flex;
+//     padding: 0;
+//     /* margin: 0; */
+//     margin-bottom: 35px;
+//     list-style: none;
+//   }
+  
+//   &__item {
+//     margin-left: 8px;
+  
+//     &:nth-child(1) {
+//       margin-left: 0;
+//     }
+//   }
+
+//   &__button {
+//     padding: 6px 22px;
+//     min-width: 73px;
+//     font-weight: 500;
+//     font-size: 16px;
+//     line-height: 1.62;
+//     letter-spacing: 0.03em;
+//     background-color: $buttonBackground;
+//     border: none;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     transition: color 250ms $transitionCubic,
+//     background-color 250ms $transitionCubic, box-shadow 250ms $transitionCubic;
+  
+//     &:hover,
+//     &:focus {
+//       color: $contrastColor;
+//       background-color: $accentColor;
+//       box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//         0px 2px 2px rgba(0, 0, 0, 0.12);
+//     }
+//   }
+// }

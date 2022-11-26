@@ -1,0 +1,45 @@
+.services {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    // @extend %section;
+
+    // &__title {
+    //     @extend %section-title;
+    // }
+
+    // &__list {
+    //     @extend %container;
+    //     @extend %list;
+    // }
+
+    &__item {
+        position: relative;
+        margin-left: 30px;
+    
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+
+    &__img {
+        display: block;
+    }
+
+    &__text {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $contrastColor;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}

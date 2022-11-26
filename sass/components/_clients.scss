@@ -1,0 +1,50 @@
+.clients {
+    @extend %section;
+    padding-bottom: 30px;
+
+    &__title {
+        @extend %section-title;
+    }
+
+    &__list {
+        @extend %container;
+        @extend %list;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    // &__item {
+    //     // margin-left: 30px;
+    //     // margin-bottom: 30px;
+        
+    
+    //     // &:nth-child(1) {
+    //     //     margin-left: 0;
+    //     // }
+    // }
+
+    &__link {
+        display: flex;
+        
+        align-items: center;
+        justify-content: center;
+        min-width: 210px;
+        // width: 170px;
+        height: 92px;
+        color: $iconColor;
+        border: 1px solid ;
+        border-radius: 4px;
+        transition: color 250ms $transitionCubic;
+    
+        &:hover, &:focus {
+            color: $accentColor;
+        }
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+}
+

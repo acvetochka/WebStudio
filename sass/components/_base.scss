@@ -1,0 +1,36 @@
+body {
+    // display: block;
+    // width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--primary-text-color);
+    font-family: 'Roboto', -apple-system,
+        BlinkMacSystemFont,
+        avenir next,
+        avenir,
+        segoe ui,
+        helvetica neue,
+        helvetica,
+        Cantarell,
+        Ubuntu,
+        roboto,
+        noto,
+        arial,
+        sans-serif;
+
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}

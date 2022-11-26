@@ -1,0 +1,14 @@
+.join {
+    // display: flex;
+    // flex-direction: column;
+
+    &__text {
+        text-transform: uppercase;
+        color: $contrastColor;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        margin-bottom: 20px;
+    }
+}
