@@ -1,20 +1,22 @@
 .nav {
-    position: absolute;
-    top: 48px;
-    left: 40px;
+    // position: absolute;
+    // top: 48px;
+    // left: 40px;
 
     @extend %list;
     padding-left: 0;
 
-    // &__item {
-    //     display: flex;
-    //     position: relative;
-    //     margin-left: 50px;
+    &__item {
+        @media screen and (min-width: 768px) {
+        display: flex;
+        position: relative;
+        margin-left: 50px;
 
-    //     &:nth-child(1) {
-    //         margin-left: 0;
-    //     }
-    // }
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+        }
+    }
 
     &__link {
         // display: block;
@@ -32,39 +34,21 @@
             color: $accentColor;
 
             &::after {
-                content: "";
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                transform: translateY(25%);
-                height: 4px;
-                width: 100%;
-
-                background: $accentColor;
-                border-radius: 2px;
+                @media screen and (min-width: 768px) {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    transform: translateY(25%);
+                    height: 4px;
+                    width: 100%;
+                
+                    background: $accentColor;
+                    border-radius: 2px;
+                }                
             }
         }
     }
 }
 
-.nav-button {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: transparent;
 
-    &__cross {
-        display: none;
-
-        .nav-button.is-open & {
-            display: block;
-        }
-    }
-
-    &__menu {
-        .nav-button.is-open & {
-            display: none;
-        }
-    }
-}

@@ -1,10 +1,11 @@
 .header {
-    // position: relative;
+    position: relative;
     height: 60px;
     border-bottom: 1px solid #ECECEC;
 
     &__container {
         @extend %container;
+        // position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;

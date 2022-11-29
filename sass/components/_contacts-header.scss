@@ -1,26 +1,26 @@
 .contacts-head {
-    @media screen and (max-width:480px) {
-        display: none;
-    }
+    // @media screen and (max-width:480px) {
+    //     display: none;
+    // }
 
 
     @extend %list;
-    margin-left: auto;
+    // margin-left: auto;
 
-    &__item {
-        display: flex;
-        position: relative;
-        margin-left: 50px;
+    // &__item {
+    //     // display: flex;
+    //     // position: relative;
+    //     // margin-left: 50px;
     
-        &:nth-child(1) {
-            margin-left: 0;
-        }
-    }
+    //     // &:nth-child(1) {
+    //     //     margin-left: 0;
+    //     // }
+    // }
 
     &__link {
-        display: flex;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        // display: flex;
+        // padding-top: 32px;
+        // padding-bottom: 32px;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;

@@ -21,10 +21,8 @@
 
 .modal {
     position: relative;
-    // position: absolute;
-    // top: 100%;
-    // left: 50%;
-    // transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
+    // 
+    // 
     // width: 528px;
     background-color: $primaryBackground;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -33,6 +31,15 @@
     border-radius: 4px;
     transition: transform 250ms $transitionCubic;
     
+    @media screen and (min-width:768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 450px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+    }
+
     .backdrop--hidden & {
         position: absolute;
         top: 50%;
@@ -103,6 +110,7 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding-left: 42px;
+        transition: outline 250ms $transitionCubic;;
     
         &:hover {
             cursor: pointer;
