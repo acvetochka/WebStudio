@@ -39,6 +39,7 @@
     &:focus {
         background-color: $accentColor;
         color: $contrastColor;
+        outline:none;
     }
 
     .join & {

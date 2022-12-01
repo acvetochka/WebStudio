@@ -20,7 +20,7 @@
 
 
 .modal {
-    position: relative;
+    position: absolute;
     // 
     // 
     // width: 528px;
@@ -32,7 +32,7 @@
     transition: transform 250ms $transitionCubic;
     
     @media screen and (min-width:768px) {
-        position: absolute;
+        // position: absolute;
         top: 50%;
         left: 50%;
         max-width: 450px;

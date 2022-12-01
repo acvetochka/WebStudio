@@ -22,36 +22,115 @@
         <a href="./index.html" class="logo"
           ><span class="logo--accent">Web</span>Studio</a
         >
-        <nav>
-          <ul class="list nav">
-            <li class="nav__item">
-              <a href="./index.html" class="nav__link">Студія</a>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          data-menu-button
+          aria-expanded="false"
+        >
+          <!-- class="menu-button is-open" -->
+          <svg
+            class="menu-toggle__icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="menu-button__open"
+              href="./images/icons.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu" data-menu>
+          <nav>
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="./index.html" class="nav__link">Студія</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--current"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="contacts-head">
+            <li class="contacts-head__item">
+              <a href="mailto:info@devstudio.com" class="contacts-head__link">
+                <svg class="contacts-head__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
             </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--current"
-                >Портфоліо</a
-              >
+            <li class="contacts-head__item">
+              <a href="tel:+380961111111" class="contacts-head__link">
+                <svg class="contacts-head__icon" width="10" height="16">
+                  <use href="./images/icons.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
             </li>
-            <li class="nav__item"><a href="" class="nav__link">Контакти</a></li>
           </ul>
-        </nav>
-
-        <ul class="list contacts-head">
-          <li class="contacts-head__item">
-            <a href="mailto:info@devstudio.com" class="contacts-head__link">
-              <svg class="contacts-head__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-mail"></use>
-              </svg>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            class="menu-toggle__icon"
+            width="40"
+            height="40"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use
+              class="menu-button__cross"
+              href="./images/icons.svg#icon-close_menu"
+            ></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link">Студія</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a
+              href="./portfolio.html"
+              class="mobile-menu__link mobile-menu__link--current"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="" class="mobile-menu__link">Контакти</a>
+          </li>
+        </ul>
+        <ul class="contacts-menu">
+          <li class="contacts-menu__item">
+            <a href="tel:+380961111111" class="contacts-menu__tel">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="contacts-menu__item">
+            <a href="mailto:info@devstudio.com" class="contacts-menu__mail">
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts-head__item">
-            <a href="tel:+380961111111" class="contacts-head__link">
-              <svg class="contacts-head__icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-tel"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+        </ul>
+        <ul class="social-menu">
+          <li class="social-menu__item">
+            <a href="" class="social-menu__link">Instagram</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="" class="social-menu__link">Twitter</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="" class="social-menu__link">Facebook</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="" class="social-menu__link">LinkedIn</a>
           </li>
         </ul>
       </div>
@@ -86,8 +165,6 @@
                   <img
                     src="./images/technokryak.jpg"
                     alt="Технокряк"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -108,8 +185,6 @@
                   <img
                     src="./images/new-orlean.jpg"
                     alt="New Orlean vs Golden Star"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -132,8 +207,6 @@
                   <img
                     src="./images/seafood.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -154,8 +227,6 @@
                   <img
                     src="./images/prime.jpg"
                     alt="Проєкт Prime"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -176,8 +247,6 @@
                   <img
                     src="./images/boxes.jpg"
                     alt="Проєкт Boxes"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -198,8 +267,6 @@
                   <img
                     src="./images/inspiration.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -220,8 +287,6 @@
                   <img
                     src="./images/limited-edition.jpg"
                     alt="Видання Limited Edition"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -242,8 +307,6 @@
                   <img
                     src="./images/lab.jpg"
                     alt="Проєкт LAB"
-                    width="370"
-                    height="294"
                     class="projects__img"
                   />
                   <p class="projects__overlay">
@@ -371,5 +434,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

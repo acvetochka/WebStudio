@@ -1,12 +1,10 @@
 .hero {
-    // max-width: 480px;
-    // max-height: 400px;
-    padding: 118px 60px;
+    margin: 0 auto;
+    max-width: 480px;
+    // height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
-
-    // max-width: 1600px;
-    // padding: 200px 0;
-    // height: 600px;
     background-color: $heroBackground;
     background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
@@ -18,18 +16,61 @@
     background-position: center;
     text-align: center;
 
-    @media screen and (min-width:768px) {
+    // @media screen and(max-width: 480px) {
+    //     max-width: 480px; 
+    // }
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                        url('../images/hero-mobile2x.jpg');
+            }
+    }
+
+    @media screen and (min-width:481px) {
+        max-width: 768px;
         background-image: linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
                 url('../images/hero-tablet.jpg');
+        background-size: 768px 400px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                                url('../images/hero-tablet2x.jpg');
+                }
+            }
     }
 
     @media screen and (min-width:1200px) {
+        width: 1600px;
+        height: 600px;
+        padding: 200px 0;
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url('../images/hero.jpg');
+        background-size: 1600px 600px;
+
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                & {
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url('../images/hero2x.jpg');
+                }
+            }
     }
 
     &__title {
