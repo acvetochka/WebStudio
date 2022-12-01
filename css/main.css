@@ -1,20 +1,20 @@
-.projects, .filter, .page-footer__container, .clients__list, .team__list, .benefits__list, .header__container {
+.projects, .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
-  .projects, .filter, .page-footer__container, .clients__list, .team__list, .benefits__list, .header__container {
+  .projects, .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     max-width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
-  .projects, .filter, .page-footer__container, .clients__list, .team__list, .benefits__list, .header__container {
+  .projects, .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .projects, .filter, .page-footer__container, .clients__list, .team__list, .benefits__list, .header__container {
+  .projects, .filter, .page-footer__container, .clients__list, .team__list, .services__list, .benefits__list, .header__container {
     display: flex;
     width: 1200px;
     align-items: center;
@@ -22,23 +22,23 @@
   }
 }
 
-.clients__list, .team__list, .benefits__list, .contacts-head, .nav, .contacts-menu {
+.clients__list, .team__list, .services__list, .benefits__list, .contacts-head, .nav, .contacts-menu {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .clients__list, .team__list, .benefits__list, .contacts-head, .nav, .contacts-menu {
+  .clients__list, .team__list, .services__list, .benefits__list, .contacts-head, .nav, .contacts-menu {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
   }
 }
 
-.projects-section, .clients, .team, .benefits {
+.projects-section, .clients, .team, .services, .benefits {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.clients__title, .team__title {
+.clients__title, .team__title, .services__title {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
@@ -46,12 +46,7 @@
   margin-bottom: 30px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
-  padding-top: 60px;
   margin-left: auto;
   margin-right: auto;
   color: var(--primary-text-color);
@@ -59,6 +54,11 @@ body {
 }
 body.modal-open {
   overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  body {
+    padding-top: 60px;
+  }
 }
 
 h1,
@@ -82,6 +82,11 @@ ul {
   max-height: 60px;
   border-bottom: 1px solid #ECECEC;
   background: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    position: relative;
+  }
 }
 .header__container {
   display: flex;
@@ -170,11 +175,12 @@ ul {
   flex-direction: column;
   background-color: #ffffff;
   z-index: 999;
-  transform: translateY(-150%);
+  overflow-y: scroll;
+  transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translateX(0);
 }
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -338,13 +344,12 @@ ul {
 .hero {
   margin: 0 auto;
   max-width: 480px;
+  height: 400px;
   padding: 118px 30px;
-  padding-top: 118px;
-  padding-bottom: 118px;
   background-color: #C4C4C4;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 480px 400px;
   background-position: center;
   text-align: center;
 }
@@ -353,28 +358,29 @@ ul {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile2x.jpg");
   }
 }
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 577px) {
   .hero {
     max-width: 768px;
+    padding: 118px 60px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
     background-size: 768px 400px;
   }
 }
-@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 577px) and (min-device-pixel-ratio: 2), screen and (min-width: 577px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 577px) and (min-resolution: 192dpi), screen and (min-width: 577px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet2x.jpg");
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 961px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
     background-size: 1600px 600px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 961px) and (min-device-pixel-ratio: 2), screen and (min-width: 961px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 961px) and (min-resolution: 192dpi), screen and (min-width: 961px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero2x.jpg");
   }
@@ -408,20 +414,17 @@ ul {
   background-color: #188CE8;
 }
 
-.benefits__item {
-  margin-bottom: 30px;
+@media screen and (min-width: 768px) {
+  .benefits__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
-    padding: 0;
-    margin-left: 30px;
+    width: 354px;
   }
-  .benefits__item:nth-child(1) {
-    margin-left: 0;
-  }
-}
-.benefits__item:last-child {
-  margin-bottom: 0;
 }
 .benefits__icons-container {
   display: flex;
@@ -429,6 +432,11 @@ ul {
   border-radius: 4px;
   height: 120px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__icons-container {
+    width: 354px;
+  }
 }
 .benefits__icon {
   margin: auto;
@@ -453,7 +461,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .services {
     display: none;
   }
@@ -708,9 +716,7 @@ ul {
 
 .backdrop {
   position: fixed;
-  padding-top: 93px;
-  padding-left: 15px;
-  padding-right: 15px;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -727,6 +733,11 @@ ul {
 
 .modal {
   position: absolute;
+  top: 93px;
+  left: 50%;
+  max-width: 450px;
+  width: 100%;
+  transform: translateX(-50%);
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -735,10 +746,18 @@ ul {
 @media screen and (min-width: 768px) {
   .modal {
     top: 50%;
-    left: 50%;
-    max-width: 450px;
-    width: 100%;
     transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
+  .backdrop--hidden .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
   }
 }
 .backdrop--hidden .modal {
@@ -783,6 +802,11 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .form__title {
+    line-height: 1.15;
+  }
 }
 .form__field {
   position: relative;

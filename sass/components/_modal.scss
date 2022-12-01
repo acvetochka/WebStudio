@@ -1,8 +1,6 @@
 .backdrop {
     position: fixed;
-    padding-top: 93px;
-    padding-left: 15px;
-    padding-right: 15px;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -21,23 +19,44 @@
 
 .modal {
     position: absolute;
-    // 
-    // 
-    // width: 528px;
+    top: 93px;
+    left: 50%;
+    max-width: 450px;
+    width: 100%;
+    transform: translateX(-50%);
     background-color: $primaryBackground;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms $transitionCubic;
+
+    // .backdrop--hidden & {
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translateX(-50%, -50%) scale(0) rotateZ(0deg);
+    // }
     
     @media screen and (min-width:768px) {
         // position: absolute;
         top: 50%;
-        left: 50%;
-        max-width: 450px;
-        width: 100%;
+        // left: 50%;
+        // max-width: 450px;
+        // width: 100%;
         transform: translate(-50%, -50%);
+    }
+
+    @media screen and (min-width:1200px) {
+        max-width:528px;
+
+        .backdrop--hidden & {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
+        }
+        
     }
 
     .backdrop--hidden & {
@@ -84,9 +103,12 @@
         font-weight: 700;
         font-size: 20px;
         line-height: 1.5;
-        // line-height: 1.15;
         letter-spacing: 0.03em;
         margin-bottom: 12px;
+
+        @media screen and(min-width:1200px) {
+            line-height: 1.15;
+        }
     }
 
     &__field {

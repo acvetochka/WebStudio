@@ -1,18 +1,18 @@
 .services {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         display: none;
     }
 
-    // @extend %section;
+    @extend %section;
 
-    // &__title {
-    //     @extend %section-title;
-    // }
+    &__title {
+        @extend %section-title;
+    }
 
-    // &__list {
-    //     @extend %container;
-    //     @extend %list;
-    // }
+    &__list {
+        @extend %container;
+        @extend %list;
+    }
 
     &__item {
         position: relative;

@@ -6,34 +6,51 @@
         @extend %list;
         @extend %container;
         // align-items: start;
+
+        @media screen and (min-width:768px) {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+        }
     }    
  
     &__item {
-        margin-bottom: 30px;
-
-        @media screen and (min-width:768px){
-            padding: 0;
-            margin-left: 30px;
         
-            &:nth-child(1) {
-                margin-left: 0;
+
+        @media screen and (min-width:768px) {
+                width: 354px;
+               
             }
+
+        // @media screen and (min-width:768px){
+        //     display: flex;
+        //     flex-wrap:wrap;
+            // padding: 0;
+            // margin-left: 30px;
+        
+            // &:nth-child(1) {
+            //     margin-left: 0;
+            // }
         }
        
 
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
+        // &:last-child {
+        //     margin-bottom: 0;
+        // }
+    
 
     &__icons-container {
         // width: 100%;
         display: flex;
         background-color: $contentBackground;
         border-radius: 4px;
-        // width: 270px;
+
         height: 120px;
         margin-bottom: 30px;
+
+        @media screen and (min-width:768px) {
+            width: 354px;
+        }
     }
 
     &__icon {

@@ -1,7 +1,5 @@
-* {box-sizing: border-box;}
-
 body {
-    padding-top: 60px;
+    
     // position: relative;
     // display: block;
     // width: 1600px;
@@ -24,6 +22,11 @@ body {
 
     &.modal-open {
         overflow: hidden;
+    }
+
+    @media screen and (max-width:767px) {
+        padding-top: 60px;
+        
     }
 }
 
