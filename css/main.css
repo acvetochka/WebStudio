@@ -338,6 +338,7 @@ ul {
 .hero {
   margin: 0 auto;
   max-width: 480px;
+  padding: 118px 30px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #C4C4C4;
