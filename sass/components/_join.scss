@@ -1,6 +1,11 @@
 .join {
-    // display: flex;
-    // flex-direction: column;
+   
+
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: column;
+        margin-right: 94px;
+    }
 
     &__text {
         text-transform: uppercase;
