@@ -37,6 +37,12 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .projects-section, .clients, .team, .services, .benefits {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .clients__title, .team__title, .services__title {
   font-size: 28px;
@@ -44,6 +50,24 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -90,6 +114,7 @@ ul {
   }
 }
 .header__container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -110,6 +135,7 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
+  margin-right: 0;
 }
 @media screen and (min-width: 768px) {
   .logo {
@@ -190,8 +216,6 @@ ul {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  display: flex;
-  flex-direction: column;
   background-color: #ffffff;
   z-index: 999;
   overflow-y: scroll;
@@ -271,7 +295,6 @@ ul {
   display: flex;
   list-style: none;
 }
-
 .social-menu__item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   padding-right: 10px;
@@ -283,7 +306,6 @@ ul {
 .social-menu__item:nth-child(1) {
   padding-left: 0;
 }
-
 .social-menu__link {
   font-weight: 500;
   font-size: 12px;
@@ -327,6 +349,9 @@ ul {
   letter-spacing: 0.02em;
   color: #212121;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover, .nav__link:focus {
+  color: #2196F3;
 }
 .nav__link--current {
   color: #2196F3;
@@ -816,7 +841,12 @@ ul {
 }
 
 .subscription {
-  width: 450px;
+  max-width: 450px;
+}
+@media screen and (min-width: 768px) {
+  .subscription {
+    width: 450px;
+  }
 }
 .subscription__text {
   margin-bottom: 20px;
@@ -1100,7 +1130,17 @@ ul {
 }
 
 .filter {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 50px;
+  }
 }
 .filter__list {
   width: 80%;
@@ -1108,15 +1148,23 @@ ul {
   flex-wrap: wrap;
   padding: 0;
   /* margin: 0; */
-  margin-bottom: 40px;
   list-style: none;
-  margin-left: -4px;
-  margin-right: -4px;
+  gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .filter__list {
+    width: 100%;
+    gap: 8px;
+    justify-content: center;
+  }
 }
 .filter__item {
   margin-bottom: 15px;
-  margin-left: 4px;
-  margin-right: 4px;
+}
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin: 0;
+  }
 }
 .filter__button {
   padding: 6px 22px;
@@ -1143,16 +1191,21 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   list-style: none;
-  margin: -15px;
+  gap: 30px;
 }
 .projects__item {
   /* width: 370px; */
-  margin: 15px;
+  width: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .projects__item {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 60px) / 3);
   }
 }
 .projects__item:hover, .projects__item:focus {
@@ -1171,11 +1224,6 @@ ul {
 .projects__img {
   display: block;
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .projects__img {
-    max-width: 354px;
-  }
 }
 .projects__overlay {
   position: absolute;

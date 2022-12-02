@@ -10,13 +10,12 @@
 
     @media screen and (min-width:768px) {
         position: relative;
-        max-height: 80px;
-        
+        max-height: 80px;        
     }
 
     &__container {
         @extend %container;
-        // position: relative;
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;

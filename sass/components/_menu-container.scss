@@ -35,6 +35,12 @@
         fill: currentColor;
     }
 
+    // .header & {
+    //     position: absolute;
+    //     top:16px;
+    //     right: 16px;
+    // }
+
     .menu-container & {
         position: absolute;
         top: 16px;
@@ -55,8 +61,8 @@
     width: 100vw;
     height: 100vh;
     padding: 48px 40px;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     background-color: $primaryBackground;
     z-index: 999;
     overflow-y: scroll;
@@ -121,7 +127,6 @@
             color: $accentColor;
             text-decoration: none;
 
-                   
             &:hover,
             &:focus {
                 color: $accentColor;
@@ -151,32 +156,32 @@
 .social-menu {
     display: flex;
     list-style: none;
+
+    &__item {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+        padding-left: 10px;
+
+        &:last-child {
+            border: none;
+        }
+
+        &:nth-child(1) {
+            padding-left: 0;
+        }
+    }
     
-}
-
-.social-menu__item {
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
-    padding-right: 10px;
-    padding-left: 10px;
-
-    &:last-child {
-        border:none;
-    }
-
-    &:nth-child(1) {
-        padding-left: 0;
+    &__link {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: $accentColor;
+        text-decoration: none;
+    
+        @media screen and (min-width:480px) {
+            font-size: 18px;
+        }
     }
 }
 
-.social-menu__link {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    color: $accentColor;
-    text-decoration: none;
-
-    @media screen and (min-width:480px) {
-        font-size: 18px;   
-    }
-}
