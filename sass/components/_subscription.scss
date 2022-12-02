@@ -1,4 +1,9 @@
 .subscription {
+    width: 450px;
+
+    @media screen and(min-width:768px) {
+        
+    } 
     // display: flex;
     // flex-direction: column;
     // margin-left: auto;
@@ -15,7 +20,6 @@
 
     &__form {
         display: flex;
-
         flex-direction: column;
         align-items: center;
     }

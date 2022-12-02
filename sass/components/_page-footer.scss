@@ -6,6 +6,13 @@
     &__container {
         @extend %container;
         text-align: center;
+        
+        @media screen and(min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+        }
         // justify-content: start;
         // align-items: baseline;
     }

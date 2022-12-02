@@ -1,10 +1,18 @@
-.nav {
-    // position: absolute;
-    // top: 48px;
-    // left: 40px;
+// .menu {
 
+//     display: flex;
+//     @media screen and (max-width:767px) {
+//         display: none;
+//     }
+// }
+
+.nav {
     @extend %list;
     padding-left: 0;
+
+    @media screen and (max-width:767px) {
+            display: none;
+        }
 
     &__item {
         @media screen and (min-width: 768px) {
@@ -19,9 +27,9 @@
     }
 
     &__link {
-        // display: block;
-        // padding-top: 32px;
-        // padding-bottom: 32px;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;

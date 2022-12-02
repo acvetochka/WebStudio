@@ -1,21 +1,39 @@
 .contacts-head {
-    // @media screen and (max-width:480px) {
-    //     display: none;
-    // }
-
-
     @extend %list;
-    // margin-left: auto;
+        margin-left: auto;
 
-    // &__item {
-    //     // display: flex;
-    //     // position: relative;
-    //     // margin-left: 50px;
-    
-    //     // &:nth-child(1) {
-    //     //     margin-left: 0;
-    //     // }
-    // }
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
+
+    &__item {
+        @media screen and (min-width:768px) {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            };
+        }
+        
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 50px;
+        
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        
+    }
 
     &__link {
         // display: flex;

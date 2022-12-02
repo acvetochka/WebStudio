@@ -13,12 +13,10 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        width: 1200px;
+        max-width: 1200px;
         align-items: center;
         justify-content: center;
     }
-
-  
 }
 
 %list {

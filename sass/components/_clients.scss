@@ -12,25 +12,26 @@
         flex-wrap: wrap;
         gap: 30px;
         justify-content: center;
+
+        @media screen and (min-width:1200px) {
+            flex-wrap: nowrap;
+            }
     }
 
-    // &__item {
-    //     // margin-left: 30px;
-    //     // margin-bottom: 30px;
-        
-    
-    //     // &:nth-child(1) {
-    //     //     margin-left: 0;
-    //     // }
-    // }
+    &__item {
+        width: 210px;
+        @media screen and (min-width:1200px) {
+                width: 170px;
+            }
+    }
 
     &__link {
         display: flex;
         
         align-items: center;
         justify-content: center;
-        min-width: 210px;
-        // width: 170px;
+        
+        
         height: 92px;
         color: $iconColor;
         border: 1px solid ;
@@ -39,6 +40,10 @@
     
         &:hover, &:focus {
             color: $accentColor;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 170px;
         }
     }
 
