@@ -74,7 +74,6 @@
           </li>
         </ul>
       </div>
-
       <!-- Mobile menu -->
       <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
@@ -235,13 +234,31 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list">
           <li class="team__item">
-            <img
-              src="./images/demyanenko.jpg"
-              alt="Ігор Демяненко"
-              width="270"
-              height="260"
-              class="team__img"
-            />
+            <picture>
+              <source
+                srcset="
+                  ./images/demyanenko-tablet.jpg    1x,
+                  ./images/demyanenko-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/demyanenko.jpg    1x,
+                  ./images/demyanenko@2x.jpg 2x
+                "
+                media="(min-width: 1200px)"
+              />
+              <img
+                srcset="
+                  ./images/demyanenko-mobile.jpg    1x,
+                  ./images/demyanenko-mobile@2x.jpg 2x
+                "
+                alt="Ігор Демяненко"
+                class="team__img"
+              />
+            </picture>
+
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p lang="en" class="team__direct">Product Designer</p>
 
@@ -541,7 +558,11 @@
     <!-- Модальне вікно -->
     <div class="backdrop backdrop--hidden" data-modal>
       <div class="modal">
-        <button class="close" data-modal-close>
+        <button
+          class="close"
+          aria-label="Кнопка закриття модального вікна"
+          data-modal-close
+        >
           <svg class="close__icon">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>

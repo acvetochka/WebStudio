@@ -20,7 +20,7 @@
         // margin-left: 0;
         // margin-bottom: 0;
         font-size: 14px;
-        line-height: 1.71;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         font-style: normal;
         list-style: none;
@@ -32,6 +32,7 @@
         }
 
     &__link {
+        display: inline-block;
         color: $contrastColor;
         text-decoration: none;
         transition: color 250ms $transitionCubic;
@@ -44,6 +45,7 @@
     }
 
     &__item {
+        display: inline-block;
         color: $addressItemColor;
         text-decoration: none;
         transition: color 250ms $transitionCubic;
