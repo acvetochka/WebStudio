@@ -68,7 +68,7 @@
         height: 100%;
         transform: translateY(100%);
         transition: transform 250ms $transitionCubic;
-        padding: 63px 24px;
+        padding: 77px 24px;
         font-size: 18px;
         line-height: 1.56;
         letter-spacing: 0.03em;
@@ -76,6 +76,15 @@
     
         color: $contrastColor;
         background: rgba(33, 150, 243, 0.9);
+
+        @media screen and (min-width: 768px) {
+            padding-top: 48px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 63px 24px;
+            
+        }
     
         .projects__link:hover &,
         .projects__link:focus & {
