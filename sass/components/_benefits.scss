@@ -8,6 +8,8 @@
     &__list {
         @extend %list;
         @extend %container;
+        display: block;
+        
 
         @media screen and (min-width:768px) {
             display: flex;
@@ -22,8 +24,15 @@
     }    
  
     &__item {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
         @media screen and (min-width:768px) {
             width: 354px;    
+            margin-bottom: 0;
         }
 
         @media screen and (min-width:1200px) {

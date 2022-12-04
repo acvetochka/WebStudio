@@ -526,6 +526,9 @@ ul {
     padding-bottom: 0;
   }
 }
+.benefits__list {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .benefits__list {
     display: flex;
@@ -539,9 +542,16 @@ ul {
     flex-wrap: nowrap;
   }
 }
+.benefits__item {
+  margin-bottom: 30px;
+}
+.benefits__item:last-child {
+  margin-bottom: 0;
+}
 @media screen and (min-width: 768px) {
   .benefits__item {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
