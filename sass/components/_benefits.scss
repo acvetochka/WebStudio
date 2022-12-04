@@ -13,7 +13,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
-    }
+        }
 
         @media screen and (min-width:1200px) {
             align-items: start;
@@ -24,7 +24,7 @@
     &__item {
         @media screen and (min-width:768px) {
             width: 354px;    
-        };
+        }
 
         @media screen and (min-width:1200px) {
             width: 270px;

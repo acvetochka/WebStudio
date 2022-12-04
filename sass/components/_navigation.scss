@@ -8,13 +8,13 @@
 
     &__item {
         @media screen and (min-width: 768px) {
-        display: flex;
-        position: relative;
-        margin-left: 50px;
+            display: flex;
+            position: relative;
+            margin-left: 50px;
 
-        &:nth-child(1) {
-            margin-left: 0;
-        }
+            &:first-child {
+                margin-left: 0;
+            }
         }
     }
 
@@ -43,7 +43,7 @@
                     position: absolute;
                     bottom: 0;
                     right: 0;
-                    transform: translateY(25%);
+                    // transform: translateY(25%);
                     height: 4px;
                     width: 100%;
                 

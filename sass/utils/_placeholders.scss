@@ -48,12 +48,12 @@
 
     margin-bottom: 30px;
     
-    // font-size: 36px;
-    // line-height: 1.17;
-
-
-        // margin-top: 0;
-        // margin-bottom: 50px;
+    @media screen and (min-width:1200px){
+        font-size: 36px;
+        line-height: 1.17;    
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
 }
 
 .visually-hidden {

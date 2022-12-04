@@ -47,7 +47,6 @@
 
 }
 
-
 .menu-container {
     position: fixed;
     top: 0;
@@ -65,8 +64,8 @@
     transition: transform 250ms $transitionCubic;
 
     &.is-open {
-            transform: translateX(0);
-        }
+        transform: translateX(0);
+    }
 
     @media screen and(min-width:768px) {
         display: none;
@@ -160,7 +159,7 @@
             border: none;
         }
 
-        &:nth-child(1) {
+        &:first-child {
             padding-left: 0;
         }
     }

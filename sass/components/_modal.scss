@@ -16,7 +16,6 @@
     }
 }
 
-
 .modal {
     position: absolute;
     top: 93px;
@@ -30,33 +29,14 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms $transitionCubic;
-
-    // .backdrop--hidden & {
-    //     position: absolute;
-    //     top: 50%;
-    //     left: 50%;
-    //     transform: translateX(-50%, -50%) scale(0) rotateZ(0deg);
-    // }
-    
+  
     @media screen and (min-width:768px) {
-        // position: absolute;
         top: 50%;
-        // left: 50%;
-        // max-width: 450px;
-        // width: 100%;
         transform: translate(-50%, -50%);
     }
 
     @media screen and (min-width:1200px) {
         max-width:528px;
-
-        .backdrop--hidden & {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
-        }
-        
     }
 
     .backdrop--hidden & {
@@ -132,13 +112,14 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         padding-left: 42px;
-        transition: outline 250ms $transitionCubic;;
+        transition: border 250ms $transitionCubic;
     
         &:hover {
             cursor: pointer;
         }
         &:focus {
-            outline: 1px solid $accentColor;
+            outline: none;
+            border: 1px solid $accentColor;
         }
     }
 
@@ -172,13 +153,15 @@
         line-height: 1.17;
         letter-spacing: 0.01em;
         resize: none;
+        transition: border 250ms $transitionCubic;
     
         &::placeholder {
             color: rgba(117, 117, 117, 0.5);
         }
     
         &:focus {
-            outline: 1px solid $accentColor;
+            outline: none;
+            border: 1px solid $accentColor;
         }
     }
 
@@ -209,7 +192,6 @@
 }
 
 .checkbox {
-   
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
@@ -220,8 +202,10 @@
     letter-spacing: 0.03em;
     color: $secondaryColor;
 
-    // font-size: 14px;
-    // line-height: 1.71;
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 
     &__input {
         appearance: none;
@@ -230,21 +214,24 @@
 
     &__label {
         position: relative;
-
     }
 
     &__icon {
         position: absolute;
         top: -2px;
         left: 0;
-        // top: 4px;
-        // left: 25px;
+
         transform: translate(-50%);
         width: 16px;
         height: 15px;
         border: 2px solid $primaryСolor;
         border-radius: 2px;
         fill: $primaryBackground;
+
+        @media screen and (min-width:1200px) {
+            top: 4px;
+            // left: 25px;
+        }
     
         .checkbox__input:checked ~ & {
             fill: $accentColor;

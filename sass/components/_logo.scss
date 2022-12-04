@@ -1,6 +1,5 @@
 .logo {
     display: block;
-    // padding: 16px 0;
     font-family: Raleway;
     text-decoration: none;
     font-weight: 700;
@@ -21,7 +20,6 @@
         text-align: right;;
     }
     
-
     &--accent {
         color: $accentColor;
     }
@@ -31,17 +29,13 @@
         margin-bottom: 28px;
 
         @media screen and(min-width: 768px) {
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 28px;
-            }
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 28px;
+        }
 
         @media screen and (min-width: 1200px) {
             margin-left: 0;
         }
-
-
-
-        // margin-bottom: 20px;
     }
 }

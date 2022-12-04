@@ -199,30 +199,27 @@
         <ul class="services__list">
           <li class="services__item">
             <img
+              srcset="./images/box1.jpg 1x, ./images/box1@2x.jpg 2x"
               src="./images/box1.jpg"
               alt="Веб-сайти"
-              width="370"
-              height="294"
               class="services__img"
             />
             <p class="services__text">Декстопні додатки</p>
           </li>
           <li class="services__item">
             <img
+              srcset="./images/box2.jpg 1x, ./images/box2@2x.jpg 2x"
               src="./images/box2.jpg"
               alt="Мобільні додатки"
-              width="370"
-              height="294"
               class="services__img"
             />
             <p class="services__text">Мобільні додатки</p>
           </li>
           <li class="services__item">
             <img
+              srcset="./images/box3.jpg 1x, ./images/box3@2x.jpg 2x"
               src="./images/box3.jpg"
               alt="Дизайн"
-              width="370"
-              height="294"
               class="services__img"
             />
             <p class="services__text">Дизайнерські рішення</p>
@@ -237,23 +234,26 @@
             <picture>
               <source
                 srcset="
-                  ./images/demyanenko-tablet.jpg    1x,
-                  ./images/demyanenko-tablet@2x.jpg 2x
-                "
-                media="(min-width: 768px)"
-              />
-              <source
-                srcset="
                   ./images/demyanenko.jpg    1x,
                   ./images/demyanenko@2x.jpg 2x
                 "
                 media="(min-width: 1200px)"
               />
+
+              <source
+                srcset="
+                  ./images/demyanenko-tablet.jpg    1x,
+                  ./images/demyanenko-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
               <img
                 srcset="
                   ./images/demyanenko-mobile.jpg    1x,
                   ./images/demyanenko-mobile@2x.jpg 2x
                 "
+                src="./images/demyanenko-mobile.jpg"
                 alt="Ігор Демяненко"
                 class="team__img"
               />
@@ -294,13 +294,30 @@
             </ul>
           </li>
           <li class="team__item">
-            <img
-              src="./images/repina.jpg"
-              alt="Ольга Репіна"
-              width="270"
-              height="260"
-              class="team__img"
-            />
+            <picture>
+              <source
+                srcset="./images/repina.jpg 1x, ./images/repina@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <source
+                srcset="
+                  ./images/repina-tablet.jpg    1x,
+                  ./images/repina-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="
+                  ./images/repina-mobile.jpg    1x,
+                  ./images/repina-mobile@2x.jpg 2x
+                "
+                src="./images/repina-mobile.jpg"
+                alt="Ольга Репіна"
+                class="team__img"
+              />
+            </picture>
             <h3 class="team__name">Ольга Рєпіна</h3>
             <p lang="en" class="team__direct">Frontend Developer</p>
             <ul class="icons">
@@ -335,13 +352,30 @@
             </ul>
           </li>
           <li class="team__item">
-            <img
-              src="./images/tarasov.jpg"
-              alt="Микола Тарасов"
-              width="270"
-              height="260"
-              class="team__img"
-            />
+            <picture>
+              <source
+                srcset="./images/tarasov.jpg 1x, ./images/tarasov@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <source
+                srcset="
+                  ./images/tarasov-tablet.jpg    1x,
+                  ./images/tarasov-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="
+                  ./images/tarasov-mobile.jpg    1x,
+                  ./images/tarasov-mobile@2x.jpg 2x
+                "
+                src="./images/tarasov-mobile.jpg"
+                alt="Микола Тарасов"
+                class="team__img"
+              />
+            </picture>
             <h3 class="team__name">Микола Тарасов</h3>
             <p lang="en" class="team__direct">Marketing</p>
             <ul class="icons">
@@ -376,13 +410,30 @@
             </ul>
           </li>
           <li class="team__item">
-            <img
-              src="./images/yermakov.jpg"
-              alt="Михайло Єрмаков"
-              width="270"
-              height="260"
-              class="team__img"
-            />
+            <picture>
+              <source
+                srcset="./images/yermakov.jpg 1x, ./images/yermakov@2x.jpg 2x"
+                media="(min-width: 1200px)"
+              />
+
+              <source
+                srcset="
+                  ./images/yermakov-tablet.jpg    1x,
+                  ./images/yermakov-tablet@2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+              />
+
+              <img
+                srcset="
+                  ./images/yermakov-mobile.jpg    1x,
+                  ./images/yermakov-mobile@2x.jpg 2x
+                "
+                src="./images/yermakov-mobile.jpg"
+                alt="Михайло Єрмаков"
+                class="team__img"
+              />
+            </picture>
             <h3 class="team__name">Михайло Єрмаков</h3>
             <p lang="en" class="team__direct">UI Designer</p>
             <ul class="icons">
