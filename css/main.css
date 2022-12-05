@@ -1300,6 +1300,12 @@ ul {
   color: #ffffff;
   background: rgba(33, 150, 243, 0.9);
 }
+@media screen and (max-width: 479px) {
+  .projects__overlay {
+    padding: 24px;
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .projects__overlay {
     padding-top: 48px;
