@@ -37,6 +37,7 @@
 
     @media screen and (min-width:1200px) {
         max-width:528px;
+        transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
     }
 
     .backdrop--hidden & {
@@ -240,6 +241,19 @@
     }
 
     &__link {
+        // position: relative;
         color: $accentColor;
+        text-decoration-skip-ink: none;
+        // border-bottom: 1px solid $accentColor;
+
+        // &::after {
+        //     content: "";
+        //     position: absolute;
+        //     right: 0;
+        //     bottom: 1px;
+        //     width: 100%;
+        //     height: 1px;
+        //     background-color: $accentColor;
+        // }
     }
 }
