@@ -130,6 +130,11 @@
         left: 12px;
         width: 18px;
         height: 18px;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $accentColor;
+        }
     
         .form__input:focus + & {
             fill: $accentColor;

@@ -718,7 +718,6 @@ ul {
 }
 
 .icons__list {
-  border-radius: 50%;
   margin-left: 10px;
 }
 .icons__list:first-child {
@@ -1096,6 +1095,10 @@ ul {
   left: 12px;
   width: 18px;
   height: 18px;
+}
+.form__icon:focus {
+  outline: none;
+  border: 1px solid #2196F3;
 }
 .form__input:focus + .form__icon {
   fill: #2196F3;
