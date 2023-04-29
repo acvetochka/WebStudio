@@ -1,15 +1,15 @@
 .benefits {
     @extend %section;
 
-    @media screen and(min-width:1200px) {
-        padding-bottom: 0;  
+    @media screen and (min-width:1200px) {
+        padding-bottom: 0;
     }
-   
+
     &__list {
         @extend %list;
-        @extend %container;
+        // @extend %container;
         display: block;
-        
+
 
         @media screen and (min-width:768px) {
             display: flex;
@@ -21,8 +21,8 @@
             align-items: start;
             flex-wrap: nowrap;
         }
-    }    
- 
+    }
+
     &__item {
         margin-bottom: 30px;
 
@@ -31,7 +31,7 @@
         }
 
         @media screen and (min-width:768px) {
-            width: 354px;    
+            width: 354px;
             margin-bottom: 0;
         }
 
@@ -50,7 +50,7 @@
         margin-bottom: 30px;
     }
 
-    &__icon {   
+    &__icon {
         margin: auto;
         width: 70px;
         height: 70px;

@@ -16,9 +16,13 @@
     "/.vscode/**"
   ],
   "liveSassCompile.settings.generateMap": true,
-  "liveSassCompile.settings.autoprefix": ["defaults"],
-  "liveServer.settings.port": 5503,
-  "cSpell.words": [
-    "Перемикач"
-  ]
+  "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
+  "liveServer.settings.port": 888
+
 }
+
+
+
+  // "cSpell.words": [
+  //   "Перемикач"
+  // ]

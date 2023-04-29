@@ -4,9 +4,7 @@
     min-height: 400px;
     padding: 118px 30px;
     background-color: $heroBackground;
-    background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
+    background-image: $gradient,
                     url('../images/hero-mobile.jpg');
                     // url('../images/hero.jpg');
     background-repeat: no-repeat;
@@ -19,9 +17,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: linear-gradient(to right,
-                        rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),
+                background-image: $gradient,
                         url('../images/hero-mobile@2x.jpg');
             }
     }
@@ -29,20 +25,16 @@
     @media screen and (min-width:577px) {
         max-width: 768px;
         padding: 118px 60px;
-        background-image: linear-gradient(to right,
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),
+        background-image: $gradient,
                 url('../images/hero-tablet.jpg');
         background-size: cover;
-        // background-size: 768px 400px;
+        background-size: 768px 400px;
 
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 & {
-                    background-image: linear-gradient(to right,
-                            rgba(47, 48, 58, 0.4),
-                            rgba(47, 48, 58, 0.4)),
+                    background-image: $gradient,
                                 url('../images/hero-tablet@2x.jpg');
                 }
             }
@@ -52,9 +44,7 @@
         max-width: 1600px;
         min-height: 600px;
         padding: 200px 0;
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
+        background-image: $gradient,
             url('../images/hero.jpg');
         background-size: cover;
         // background-size: 1600px 600px;
@@ -63,9 +53,7 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 & {
-                    background-image: linear-gradient(to right,
-                            rgba(47, 48, 58, 0.4),
-                            rgba(47, 48, 58, 0.4)),
+                    background-image: $gradient,
                         url('../images/hero@2x.jpg');
                 }
             }

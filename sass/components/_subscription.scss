@@ -1,7 +1,7 @@
 .subscription {
-    @media screen and(min-width:768px) and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
         width: 450px;
-    } 
+    }
 
     &__text {
         margin-bottom: 20px;
@@ -67,7 +67,7 @@
         letter-spacing: 0.06em;
         color: $contrastColor;
         cursor: pointer;
-    
+
         &:hover,
         &:focus {
             background: $buttonAccent;

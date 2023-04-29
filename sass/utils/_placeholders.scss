@@ -68,3 +68,11 @@
     clip-path: inset(50%);
     margin: -1px;
 }
+
+$icon: "box1", "box2", "box3";
+
+@each $iconName in $icon {
+    .icon-#{$iconName} {
+        background-image: url(../images/#{$iconName}.jpg);
+    }
+}

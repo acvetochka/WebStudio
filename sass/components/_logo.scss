@@ -9,17 +9,18 @@
     color: $primaryСolor;
     margin-right: 0;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin-right: 88px;
     }
 
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-right: 93px;
         font-size: 26px;
         line-height: 1.19;
-        text-align: right;;
+        text-align: right;
+        ;
     }
-    
+
     &--accent {
         color: $accentColor;
     }
@@ -28,7 +29,7 @@
         color: $contrastColor;
         margin-bottom: 28px;
 
-        @media screen and(min-width: 768px) {
+        @media screen and (min-width: 768px) {
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 28px;
