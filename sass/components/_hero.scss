@@ -5,7 +5,7 @@
     padding: 118px 30px;
     background-color: $heroBackground;
     background-image: $gradient,
-                    url('../images/hero-mobile.jpg');
+                    url('../images/hero/hero-mobile.jpg');
                     // url('../images/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +18,7 @@
         (min-resolution: 2dppx) {
             & {
                 background-image: $gradient,
-                        url('../images/hero-mobile@2x.jpg');
+                        url('../images/hero/hero-mobile@2x.jpg');
             }
     }
 
@@ -26,7 +26,7 @@
         max-width: 768px;
         padding: 118px 60px;
         background-image: $gradient,
-                url('../images/hero-tablet.jpg');
+                url('../images/hero/hero-tablet.jpg');
         background-size: cover;
         background-size: 768px 400px;
 
@@ -35,7 +35,7 @@
             (min-resolution: 2dppx) {
                 & {
                     background-image: $gradient,
-                                url('../images/hero-tablet@2x.jpg');
+                                url('../images/hero/hero-tablet@2x.jpg');
                 }
             }
     }
@@ -45,7 +45,7 @@
         min-height: 600px;
         padding: 200px 0;
         background-image: $gradient,
-            url('../images/hero.jpg');
+            url('../images/hero/hero.jpg');
         background-size: cover;
         // background-size: 1600px 600px;
 
@@ -54,7 +54,7 @@
             (min-resolution: 2dppx) {
                 & {
                     background-image: $gradient,
-                        url('../images/hero@2x.jpg');
+                        url('../images/hero/hero@2x.jpg');
                 }
             }
     }
