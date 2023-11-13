@@ -22,7 +22,9 @@
 
 - **Контакти**: Ми пропонуємо зручний спосіб зв'язку для потенційних клієнтів. Ви можете зв'язатися з нами через форму зворотнього зв'язку, за телефоном, за допомогою електронної пошти, або через соціальні мережі.
 
+<div align="center">
 <img src="images/readme/modal.png" alt="Modal window" width="300">
+</div>
 
 - **Про нас**: Ви знайдете інформацію про нашу веб-студію, нашу команду і нашу місію.
 
@@ -32,14 +34,18 @@
 
 - **Адаптивна верстка** - Веб-сайт повністю адаптивний та оптимізований для відображення на різних пристроях, включаючи комп'ютери, планшети та смартфони.
 
-Tablet:
+
 
 <!-- ![Tablet Version](images/readme/studio-tablet.png) -->
+<div align="center">
+  <p>Tablet:</p>
 <img src="images/readme/studio-tablet.png" alt="Tablet Version" width="600">
+</div>
 
-Mobile: 
-
+<div align="center">
+  <p>Mobile: </p>
 <img src="images/readme/studio-mobile.png" alt="Mobile Version" width="300">
+</div>
 <!-- ![Tablet Version](images/readme/studio-tablet.png) -->
 
 - **Фільтрація** - на сторінці "Портфоліо" реалізована фільтрація за типами додатків.
