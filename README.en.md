@@ -21,8 +21,10 @@ Our web studio specializes in the development of websites, web applications, and
 ![Benefits and services](images/readme/benefits-services.png)
 
 - **Contact**: We offer convenient contact methods for potential clients. You can reach us through a feedback form, phone, email, or social media.
-
+  
+<div align="center">
 <img src="images/readme/modal.png" alt="Modal window" width="300">
+</div>
 
 - **About Us**: You will find information about our web studio, our team, and our mission.
 
@@ -32,14 +34,15 @@ Our web studio specializes in the development of websites, web applications, and
 
 - **Responsive Design** - The website is fully responsive and optimized for display on various devices, including computers, tablets, and smartphones.
 
-Tablet:
-
+<div align="center">
+  <p>Tablet:</p>
 <img src="images/readme/studio-tablet.png" alt="Tablet Version" width="600">
+</div>
 
-Mobile: 
-
+<div align="center">
+  <p>Mobile:</p>
 <img src="images/readme/studio-mobile.png" alt="Mobile Version" width="300">
-
+</div>
 - **Filtering** - Filtering by types of applications is implemented on the "Portfolio" page.
 
 ![Filter](images/readme/filter.png)
