@@ -15,6 +15,10 @@ body {
         noto,
         arial,
         sans-serif;
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 
     &::-webkit-scrollbar {
             width: 2px;
@@ -66,4 +70,8 @@ ul {
         // align-items: center;
         // justify-content: center;
     }
+}
+
+main {
+    padding-bottom: 30px;
 }
