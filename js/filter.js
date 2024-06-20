@@ -32,7 +32,7 @@ function filter(textContent, btnTitle, classFilter) {
   if (textContent === btnTitle) {
     proj.forEach((item) => item.classList.remove("projects__hidden"));
     const filterArr = proj.filter((item) => !item.classList.contains(`${classFilter}`)).map((el) => el.classList.add("projects__hidden"));
-    console.log(filterArr);
+    // console.log(filterArr);
     return filterArr;
   }
 }

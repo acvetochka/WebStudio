@@ -17,7 +17,20 @@
   ],
   "liveSassCompile.settings.generateMap": true,
   "liveSassCompile.settings.autoprefix": ["> 1%", "last 2 versions"],
-  "liveServer.settings.port": 888
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/",
+  "liveServer.settings.ignoreFiles": [
+      ".vscode/**",
+      "**/*.scss",
+      "**/*.sass"
+  ],
+  "liveServer.settings.file": "index.html",
+  "liveServer.settings.mount": [
+      ["/components", "./node_modules"]
+  ],
+  "liveServer.settings.mimeTypes": {
+    "js": "text/javascript"
+}
 
 }
 
