@@ -917,6 +917,10 @@ main {
   fill: currentColor;
 }
 
+#icon-client1 {
+  width: 160px;
+}
+
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;

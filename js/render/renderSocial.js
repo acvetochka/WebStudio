@@ -1,4 +1,4 @@
-import social from "../../data/social.json";
+import {social} from "../../data/social.js";
 
 const socialContainer = document.querySelector(".join .icons");
 
@@ -15,7 +15,7 @@ const renderSocial = () => {
           </li>`
     }).join("");
 
-    socialContainer.innerHTML(markup)
+    socialContainer.innerHTML = markup
 }
 
 renderSocial();
