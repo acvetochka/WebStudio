@@ -4,8 +4,8 @@ const socialContainer = document.querySelector(".join .icons");
 
 console.log(socialContainer);
 
-const renderSocial = () => {
-    const markup = social.map(({name, href, img}) => {
+export const renderSocial = (arr, container) => {
+    const markup = arr.map(({name, href, img}) => {
         return `<li class="icons__list">
             <a href=${href} class="icons__link">
               <svg class="icons__svg">
@@ -15,7 +15,11 @@ const renderSocial = () => {
           </li>`
     }).join("");
 
-    socialContainer.innerHTML = markup
+    return markup;
 }
 
-renderSocial();
+
+const markup = renderSocial(social);
+socialContainer.innerHTML = markup
+// renderSocial(social, socialContainer);
+    // socialContainer.innerHTML = markup
