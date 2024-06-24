@@ -17,14 +17,13 @@ const classList = [
     }
 ]
 
-const renderMobileMenu = () => {
+const renderMenu = () => {
     classList.forEach(({list, classLi, classLink, currentLink})=> {
         const menuList = document.querySelector(list);
         
         const markup = menu.map(({name, href})=> {
             const isActive = path === href.slice(1);
             const activeClass = isActive ? currentLink : '';
-            console.log(menuList, isActive, activeClass);
 
             return `<li class=${classLi}>
               <a href=${href} class="${classLink} ${activeClass}">${name}</a>
@@ -33,9 +32,8 @@ const renderMobileMenu = () => {
         .join('')
     
         menuList.innerHTML = markup;
-        return;
     })
 }
 
 
-renderMobileMenu();
+renderMenu();
