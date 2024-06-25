@@ -27,24 +27,7 @@
       <nav>
         <ul class="nav"></ul>
       </nav>
-      <ul class="contacts-head">
-        <li class="contacts-head__item">
-          <a href="mailto:info@devstudio.com" class="contacts-head__link">
-            <svg class="contacts-head__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="contacts-head__item">
-          <a href="tel:+380961111111" class="contacts-head__link">
-            <svg class="contacts-head__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-tel"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      <ul class="contacts-head"></ul>
     </div>
     <!-- Mobile menu -->
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -54,28 +37,8 @@
         </svg>
       </button>
       <ul class="mobile-menu"></ul>
-      <ul class="contacts-menu">
-        <li class="contacts-menu__item">
-          <a href="tel:+380961111111" class="contacts-menu__tel"> +38 096 111 11 11 </a>
-        </li>
-        <li class="contacts-menu__item">
-          <a href="mailto:info@devstudio.com" class="contacts-menu__mail"> info@devstudio.com </a>
-        </li>
-      </ul>
-      <ul class="social-menu">
-        <li class="social-menu__item">
-          <a href="#" class="social-menu__link">Instagram</a>
-        </li>
-        <li class="social-menu__item">
-          <a href="#" class="social-menu__link">Twitter</a>
-        </li>
-        <li class="social-menu__item">
-          <a href="#" class="social-menu__link">Facebook</a>
-        </li>
-        <li class="social-menu__item">
-          <a href="#" class="social-menu__link">LinkedIn</a>
-        </li>
-      </ul>
+      <ul class="contacts-menu"></ul>
+      <ul class="social-menu"></ul>
     </div>
   </header>
   <main>
@@ -112,18 +75,7 @@
       <div class="address">
         <a href="./index.html" class="logo logo--footer"> <span class="logo--accent">Web</span>Studio</a>
         <address>
-          <ul class="address__list">
-            <li>
-              <a href="https://goo.gl/maps/XMncbi9ji453G5f37" target="_blank" rel="noopener noreferrer"
-                class="address__link"> м. Київ, пр-т Лесі Українки, 26 </a>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="address__item">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+380961111111" class="address__item">+38 096 111 11 11</a>
-            </li>
-          </ul>
+          <ul class="address__list"></ul>
         </address>
       </div>
       <!-- Приєднуйтесь -->
@@ -158,27 +110,7 @@
 
       <form class="form">
         <b class="form__title">Залиште свої дані, ми вам передзвонимо</b>
-        <div class="form__field">
-          <label for="name" class="form__label">Ім'я</label>
-          <input class="form__input" type="text" name="user-name" id="name" autofocus />
-          <svg class="form__icon">
-            <use href="./images/icons.svg#icon-person"></use>
-          </svg>
-        </div>
-        <div class="form__field">
-          <label for="tel" class="form__label">Телефон</label>
-          <input class="form__input" type="tel" name="user-tel" id="tel" autocomplete="off" />
-          <svg class="form__icon">
-            <use href="./images/icons.svg#icon-phone"></use>
-          </svg>
-        </div>
-        <div class="form__field">
-          <label for="email" class="form__label">Пошта</label>
-          <input class="form__input" type="email" name="user-email" id="email" />
-          <svg class="form__icon">
-            <use href="./images/icons.svg#icon-email"></use>
-          </svg>
-        </div>
+        <div class="input-container"></div>
         <div class="form__comment">
           <label for="comment" class="form__label">Коментар</label>
           <textarea class="form__textarea" name="comment" id="comment" rows="10" placeholder="Введіть текст"></textarea>
