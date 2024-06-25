@@ -184,6 +184,7 @@
         letter-spacing: 0.02em;
         color: $accentColor;
         text-decoration: none;
+        text-transform: capitalize;
 
         @media screen and (min-width:460px) {
             font-size: 18px;

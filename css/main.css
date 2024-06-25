@@ -403,6 +403,7 @@ main {
   letter-spacing: 0.02em;
   color: #2196F3;
   text-decoration: none;
+  text-transform: capitalize;
 }
 @media screen and (min-width: 460px) {
   .social-menu__link {
