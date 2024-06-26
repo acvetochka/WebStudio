@@ -1,7 +1,6 @@
 import { contacts } from "../../data/contacts.js";
 
 const menu = contacts.slice(1);
-console.log(menu);
 
 const contactsList = document.querySelector(".contact-list");
 const addressList = document.querySelector(".address__list");

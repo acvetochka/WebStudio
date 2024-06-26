@@ -22,7 +22,7 @@ const renderMenu = () => {
         const menuList = document.querySelector(list);
         
         const markup = menu.map(({name, href})=> {
-            const isActive = path === href.slice(1);
+            const isActive = path.includes(href.slice(1));
             const activeClass = isActive ? currentLink : '';
 
             return `<li class=${classLi}>
