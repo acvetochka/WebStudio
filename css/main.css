@@ -1188,16 +1188,16 @@ main {
 @media screen and (min-width: 1200px) {
   .modal {
     max-width: 528px;
-    -webkit-transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
-            transform: translate(-50%, -50%) scale(1) rotateZ(360deg);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 .backdrop--hidden .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
-          transform: translate(-50%, -50%) scale(0) rotateZ(0deg);
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
 }
 
 .close {
