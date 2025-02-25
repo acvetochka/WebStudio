@@ -6,7 +6,7 @@
 
 ## Посилання
 
-- **Сайт:** [https://www.webstudio-portfolio.com](https://acvetochka.github.io/WebStudio/)
+- **Сайт:*[https://acvetochka.github.io/WebStudio/](https://acvetochka.github.io/WebStudio/)
 
 ## Опис
 
